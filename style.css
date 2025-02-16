@@ -1,0 +1,115 @@
+/* ใช้ฟอนต์ที่ดูสวยงามและอ่านง่าย */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #FADADD; /* สีชมพูอ่อน */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* กล่องหลักให้แสดงตรงกลาง */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* กล่องสำหรับรูปภาพ */
+#image_container {
+    width: 200px;  /* ปรับขนาดให้เหมาะสม */
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ป้องกันรูปภาพผิดสัดส่วน */
+    border-radius: 10px;
+}
+
+/* ข้อความคำถาม */
+#question {
+    font-family: 'Sacramento', cursive;
+    font-size: 48px; /* ขนาดใหญ่แต่ไม่เกินไป */
+    color: #FB607F;
+    margin-bottom: 20px;
+}
+
+/* ปรับปุ่มให้อยู่ตรงกลางและดูดีขึ้น */
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ปรับสไตล์ปุ่ม */
+button {
+    padding: 12px 24px;
+    font-size: 24px;
+    font-family: 'Sacramento', cursive;
+    background-color: #FB607F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #D43F57;
+    transform: scale(1.1);
+}
+
+/* ทำให้ปุ่ม No หนีบนคอมพิวเตอร์ */
+@media (hover: hover) {
+    #no-button {
+        padding: 12px 24px;
+        font-size: 24px;
+        font-family: 'Sacramento', cursive;
+        background-color: #FB607F;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;  /* เพิ่มการตั้งค่า position สำหรับการเปลี่ยนแปลง */
+    }
+    
+    #no-button:hover {
+        background-color: #D43F57;
+        transform: scale(1.1);
+    }
+    
+
+/* ✅ ปรับให้เหมาะกับ iPad และมือถือ */
+@media screen and (max-width: 768px) {
+    #question {
+        font-size: 40px;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #question {
+        font-size: 36px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+}
