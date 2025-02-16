@@ -58,7 +58,7 @@ function displayhug() {
 function displayMessage() {
     // Create a new paragraph element to display the message
     var message = document.createElement('p');
-    message.innerText = "yayy"; // Message to display
+    message.innerText = "to my pnsrr"; // Message to display
     message.style.fontSize = '34px'; // Adjust font size
     message.style.fontFamily = '"Brush Script MT", cursive'; // Set font family
     message.style.marginBottom = '20px'; // Add some space between image and text
