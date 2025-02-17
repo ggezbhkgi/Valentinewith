@@ -68,7 +68,7 @@ function displayMessage() {
 }
 // Function to move the "No" button randomly on hover
 
-document.getElementById('no-button').addEventListener('mouseover', function () {
+document.getElementById('no-button').addEventListener('onclick', function () {
     const x = Math.random() * (window.innerWidth - this.offsetWidth); // Random X position
     const y = Math.random() * (window.innerHeight - this.offsetHeight); // Random Y position
     this.style.position = 'absolute'; // Make it absolute positioned
